@@ -3,6 +3,11 @@
  #495525 - DC dark green r73,g85,b37
  #77A240 - DC mid green r119,g162, b64
  #a5c727 - DC light green r165,g199,b39
+ 
+ #2596b4 - ORB light blue - r37 g150 b180
+ #2a6083 - ORB mid blue - r42 g96 b131
+ #033f62 - ORB dark blue - r3 g63 b98
+ #ff0054 - ORB pink/red - r255 g0 b84
  */
 
 /* Move down content because we have a fixed navbar that is 50px tall */
@@ -12,12 +17,12 @@ body {
 
 
 a {
-    color: #495525;
+    color: #033f62;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #495525;
+    color: #033f62;
     text-decoration: underline;
 }
 
@@ -34,8 +39,8 @@ a:hover, a:focus {
 }
 
 .navbar-inverse {
-    background-color: #77A240;
-    border-color: #495525;
+    background-color: #2a6083;
+    border-color: #033f62;
 }
 
 .navbar-inverse .navbar-brand {
@@ -51,7 +56,7 @@ a:hover, a:focus {
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-    background-color: #495525;
+    background-color: #033f62;
 }
 
 /*
@@ -87,24 +92,24 @@ a:hover, a:focus {
 .nav-sidebar > li > a {
   padding-right: 20px;
   padding-left: 20px;
-  color: #495525;
+  color: #033f62;
 }
 .nav-sidebar > .text {
-  color: #495525;
+  color: #033f62;
   padding: 10px 20px;
 }
 
 .nav-sidebar > .active > a {
   color: #fff;
-  background-color: #77A240;
+  background-color: #2a6083;
 }
 
 .nav > li > a:hover {
-  background-color: #77A240;
+  background-color: #2a6083;
   color: #fff;
 }
 .nav > li > a:focus {
-  background-color: #77A240;
+  background-color: #2a6083;
   color: #fff;
 }
 
@@ -159,15 +164,15 @@ a:hover, a:focus {
 }
 
 .btn-primary {
-    background-color: #77A240;
-    border-color: #495525;
+    background-color: #2a6083;
+    border-color: #033f62;
     color: #FFFFFF;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
 	.btn-primary.active, .open .dropdown-toggle.btn-primary {
-    background-color: #77A240;
-    border-color: #495525;
+    background-color: #2a6083;
+    border-color: #033f62;
     color: #FFFFFF;
 }
 
@@ -204,8 +209,8 @@ div.date-picker-row-fluid {
 div.date-picker-row-fluid .controls{ width: 100%;}
 
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-    background-color: #77A240;
-    border-color: #77A240;
+    background-color: #2a6083;
+    border-color: #2a6083;
     color: #fff;
 }
 
@@ -215,7 +220,7 @@ div.date-picker-row-fluid .controls{ width: 100%;}
     border-color: #a5c727;
 }
 .pagination > li > a, .pagination > li > span {
-    color: #77A240;
+    color: #2a6083;
 }
 
 .table-fixed{
@@ -258,7 +263,7 @@ div.date-picker-row-fluid .controls{ width: 100%;}
 .search-block .panel-group{ margin-bottom: 0;}
 .search-block thead{ background-color: #ddd; }
 .search-block .panel-group .panel{ border-radius: 0; border:none;}
-.search-block .panel-heading{ background-color: #77A240; padding:5px 15px;}
+.search-block .panel-heading{ background-color: #2a6083; padding:5px 15px;}
 .search-block .panel-heading a{ display:block; padding: 6px 0; line-height: 1.42857143; color: #fff; text-decoration:none; font-size:1.1em; font-weight: bold;}
 
 table.sortable th > a{
@@ -296,7 +301,7 @@ table.sortable .sorted:hover{
 }
 .inline-form .glyphicon{
     margin-right: 0.1em;
-    color:#77A240;
+    color:#2a6083;
     font-size: 1.2em;
     vertical-align: middle;
 }
