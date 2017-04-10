@@ -39,8 +39,8 @@ a:hover, a:focus {
 }
 
 .navbar-inverse {
-    background-color: #2a6083;
-    border-color: #033f62;
+    background-color: #033f62;
+    border-bottom: 2px solid #ff0054;
 }
 
 .navbar-inverse .navbar-brand {
@@ -158,7 +158,7 @@ a:hover, a:focus {
  */
  
 .form-control:focus {
-	border-color: #a5c727;
+	border-color: #2596b4;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px rgba(165,199,39,0.6);
 	outline: 0 none;
 }
@@ -191,7 +191,7 @@ a:hover, a:focus {
  */
  
 #footer {
-	border-top: 1px solid #a5c727;
+	border-top: 1px solid #ff0054;
 	margin-top:50px;
 	padding-top: 20px;
 	text-align:right;
