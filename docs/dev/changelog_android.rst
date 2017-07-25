@@ -3,12 +3,26 @@ OppiaMobile Android App Change Log
 
 To see the upcoming feature developments and bug fixes, please refer to the `monthly milestones on GitHub <https://github.com/DigitalCampus/oppia-mobile-android/milestones>`_
 
-.. _appv63:
+.. _appv64:
 
-v63 (6.3.0) - Not yet released 
+v64 (6.4.0) - not yet released 
 --------------------------------------
 
+* 636: Add message when course cannot load due to parsing errors - https://github.com/DigitalCampus/oppia-mobile-android/issues/issues/636
+* 622: Add option to turn off notifications (eg new courses etc) - https://github.com/DigitalCampus/oppia-mobile-android/issues/issues/622
+* Improve app customisation process - https://github.com/DigitalCampus/oppia-mobile-android/pull/640
+* 611: NumberFormatException when connection/response timeout values are very large - https://github.com/DigitalCampus/oppia-mobile-android/issues/issues/611
+* 613: Check that the download via PC is gives the correct location for copying the files to - https://github.com/DigitalCampus/oppia-mobile-android/issues/issues/613
 
+.. _appv63:
+
+v63 (6.3.0) - Released 14 Jun 2017 
+--------------------------------------
+
+* 616: Display drag and drop questions - https://github.com/DigitalCampus/oppia-mobile-android/issues/issues/616
+* 626: Add new logo - https://github.com/DigitalCampus/oppia-mobile-android/issues/issues/626
+* 599: Full-Screen Images - https://github.com/DigitalCampus/oppia-mobile-android/issues/issues/599
+* 630: Update info for BIND_DEVICE_ADMIN - https://github.com/DigitalCampus/oppia-mobile-android/issues/issues/630
 
 .. _appv62:
 
