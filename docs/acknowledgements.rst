@@ -22,3 +22,5 @@ Contributors
 * Joseba and Adrián (`Chaotic Kingdoms <http://www.chaotic-kingdoms.com>`_) - technical development, performance improvements and bug fixes
 * Laila Hussain - Urdu translation
 * `Lebanese Alternative Learning <http://lal.ngo>`_ - Arabic (Lebanese) translation and funding for drag and drop quizzes
+* `Last Mile Health <http://lastmilehealth.org/>`_ - Funding for additional development
+* David Gil de Gómez Pérez - technical development, performance improvements and bug fixes
