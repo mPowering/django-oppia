@@ -3,6 +3,7 @@ import math
 import oppia.api
 
 import os
+from django.contrib.auth.models import User
 from django.conf import settings
 from django.contrib.auth import authenticate
 from django.http import HttpResponseRedirect, Http404, HttpResponse, JsonResponse
@@ -16,14 +17,14 @@ from oppia.settings.models import SettingProperties
 from oppia.uploader import handle_uploaded_file
 
 
-def add_course_tags(request, course, tags):
+def add_course_tags(course, tags, user):
     for t in tags:
         try:
             tag = Tag.objects.get(name__iexact=t.strip())
         except Tag.DoesNotExist:
             tag = Tag()
             tag.name = t.strip()
-            tag.created_by = request.user
+            tag.created_by = user
             tag.save()
         # add tag to course
         try:
@@ -96,10 +97,13 @@ def publish_view(request):
     if not authenticated:
         return JsonResponse(response_data, status=401)
 
+    print request.POST['username']
+    user = User.objects.get(username= request.POST['username'])
+    
     # check user has permissions to publish course
     if settings.OPPIA_STAFF_ONLY_UPLOAD is True \
-            and not request.user.is_staff \
-            and request.user.userprofile.can_upload is False:
+            and not user.is_staff \
+            and user.userprofile.can_upload is False:
         return HttpResponse(status=401)
 
     extract_path = os.path.join(settings.COURSE_UPLOAD_DIR, 'temp', str(user.id))
@@ -121,7 +125,7 @@ def publish_view(request):
 
         # add tags
         tags = request.POST['tags'].strip().split(",")
-        add_course_tags(request, course, tags)
+        add_course_tags(course, tags, user)
 
         msgs = get_messages_array(request)
         if len(msgs) > 0:
